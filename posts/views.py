@@ -3,7 +3,7 @@ posts viwes
 """
 
 #django
-from django.http import HttpResponse
+from django.shortcuts import render
 
 #utilities
 from datetime import datetime
@@ -39,15 +39,5 @@ posts = [
 
 
 def lists_posts(request):
-    "lists Existing posts"
-    contenido = []
-    for post in posts:
-        contenido.append("""
 
-            <p><strong>{name}</strong></p>
-            <p><small>{user}</strong></p>
-            <figure><img src="{picture}"/></figure>
-
-        """.format(**post))
-
-    return HttpResponse('<br>'.join(contenido))
+    return render(request, 'feed.html', {'posts':posts})
