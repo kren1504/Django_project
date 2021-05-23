@@ -12,28 +12,32 @@ from datetime import datetime
 
 posts = [
     {
-        'name':'Gal Gadot',
-        'user':'Wonder Woman',
+        'title': 'Mont Blanc',
+        'user': {
+            'name': 'Yésica Cortés',
+            'picture': 'https://picsum.photos/60/60/?image=1027'
+        },
         'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
-        'picture':'https://www.eluniverso.com/resizer/lJMJvfyEXnPr91HVocPyjRoC2ts=/817x670/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/4BWQMPEOCXAT4VVX3F3CBBU6UQ.jpg',
-    }
-    ,
+        'photo': 'https://picsum.photos/800/600?image=1036',
+    },
     {
-        'name':'Christian Bale',
-        'user':'Batman',
+        'title': 'Via Láctea',
+        'user': {
+            'name': 'Christian Van der Henst',
+            'picture': 'https://picsum.photos/60/60/?image=1005'
+        },
         'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
-        'picture':'https://aws.revistavanityfair.es/prod/designs/v1/assets/785x589/196248.jpg',
-    }
-    ,
+        'photo': 'https://picsum.photos/800/800/?image=903',
+    },
     {
-        'name':'Barry Allen',
-        'user':'Flash',
+        'title': 'Nuevo auditorio',
+        'user': {
+            'name': 'Uriel (thespianartist)',
+            'picture': 'https://picsum.photos/60/60/?image=883'
+        },
         'timestamp': datetime.now().strftime('%b %dth, %Y - %H:%M hrs'),
-        'picture':'https://vader.news/__export/1601592596230/sites/gadgets/img/2020/10/01/barry-allen-the-flash.jpg_1277422037.jpg',
+        'photo': 'https://picsum.photos/500/700/?image=1076',
     }
-
-
-
 ]
 
 
