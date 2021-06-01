@@ -18,3 +18,9 @@ class User(models.Model):
 
     created = models.DateTimeField(auto_now_add=True) #cargar la fecha en la que se creo
     modified = models.DateTimeField(auto_now=True) # guarda la fecha en que se edito por ultima vez
+
+    country = models.CharField(blank=True,max_length = 100)
+
+    def __str__(self):
+        "return email"
+        return self.email
